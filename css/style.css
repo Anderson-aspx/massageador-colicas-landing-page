@@ -137,6 +137,11 @@ h1, h2, h3 {
   color: var(--color-text-secondary);
 }
 
+.hero__copy .pill--proof {
+  margin-top: 28px;
+  margin-bottom: 0;
+}
+
 .badge--science {
   background: var(--color-primary);
   color: var(--color-white);

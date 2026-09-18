@@ -31,6 +31,18 @@
   window.addEventListener('scroll', toggleStickyAtc, { passive: true });
   toggleStickyAtc();
 
+  // Rotating promo banner
+  var promoRotator = document.getElementById('promoRotator');
+  if (promoRotator) {
+    var promoSlides = promoRotator.querySelectorAll('.promo-banner__label');
+    var promoIndex = 0;
+    setInterval(function () {
+      promoSlides[promoIndex].classList.remove('is-active');
+      promoIndex = (promoIndex + 1) % promoSlides.length;
+      promoSlides[promoIndex].classList.add('is-active');
+    }, 3000);
+  }
+
   // Product gallery thumbnails
   var mainPhoto = document.getElementById('buyMainPhoto');
   var thumbs = document.querySelectorAll('.buy__thumb');

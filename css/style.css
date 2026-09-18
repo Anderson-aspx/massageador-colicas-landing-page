@@ -176,13 +176,33 @@ h1, h2, h3 {
   text-align: center;
 }
 
+.promo-banner__rotator {
+  position: relative;
+  height: 18px;
+}
+
 .promo-banner__label {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
   font-family: var(--font-mono);
   font-size: 12px;
   font-weight: 500;
   letter-spacing: 0.04em;
   color: var(--color-white);
   text-transform: uppercase;
+  opacity: 0;
+  transform: translateY(6px);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+  pointer-events: none;
+}
+
+.promo-banner__label.is-active {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 /* ============================================

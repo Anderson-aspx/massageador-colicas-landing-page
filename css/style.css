@@ -200,7 +200,7 @@ h1, h2, h3 {
 .nav__inner {
   max-width: var(--container-width);
   margin: 0 auto;
-  padding: 18px 24px;
+  padding: 14px 24px;
   display: grid;
   grid-template-columns: 1fr auto 1fr;
   align-items: center;
@@ -217,8 +217,9 @@ h1, h2, h3 {
 }
 
 .nav__logo-img {
-  height: 26px;
+  height: 38px;
   width: auto;
+  display: block;
 }
 
 .nav__inner .btn {
@@ -678,7 +679,7 @@ h1, h2, h3 {
 }
 
 .footer__logo-img {
-  height: 20px;
+  height: 24px;
   width: auto;
 }
 

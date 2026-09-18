@@ -201,17 +201,28 @@ h1, h2, h3 {
   max-width: var(--container-width);
   margin: 0 auto;
   padding: 18px 24px;
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
   align-items: center;
-  justify-content: space-between;
+  gap: 16px;
+}
+
+.nav__spacer {
+  display: block;
 }
 
 .nav__logo {
-  font-family: var(--font-display);
-  font-weight: 800;
-  font-size: 22px;
-  letter-spacing: -0.02em;
-  color: var(--color-primary);
+  justify-self: center;
+  display: flex;
+}
+
+.nav__logo-img {
+  height: 26px;
+  width: auto;
+}
+
+.nav__inner .btn {
+  justify-self: end;
 }
 
 /* ============================================
@@ -666,11 +677,9 @@ h1, h2, h3 {
   gap: 16px;
 }
 
-.footer__logo {
-  font-family: var(--font-display);
-  font-weight: 800;
-  color: var(--color-primary);
-  font-size: 18px;
+.footer__logo-img {
+  height: 20px;
+  width: auto;
 }
 
 .footer p {

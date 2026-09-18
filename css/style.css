@@ -224,7 +224,7 @@ h1, h2, h3 {
   display: flex;
   align-items: center;
   overflow: hidden;
-  background-image: url('../assets/heatease-lifestyle.png');
+  background-image: url('../assets/heatease-lifestyle.jpg');
   background-size: cover;
   background-position: center 55%;
   mask-image: linear-gradient(180deg, black 0%, black 88%, transparent 100%);

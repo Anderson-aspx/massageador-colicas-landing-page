@@ -2,9 +2,9 @@
    HEATEASE — Design tokens (adaptado do template Synapse)
    ============================================ */
 :root {
-  --color-primary: #DCADA2;
-  --color-primary-hover: #C1988E;
-  --color-bg: #FCFBF8;
+  --color-primary: #FA7F77;
+  --color-primary-hover: #DC6F68;
+  --color-bg: #FCFCFC;
   --color-surface: #F9F6F0;
   --color-accent: #F2EAE3;
   --color-border: #F0E8E0;
